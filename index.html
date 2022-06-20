@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <section class="log">
+        
+        <form class="frm">
+                <img class="frm-img" src="./Assets/Vota_Logo_.png" alt="Vota_Logo">
+            <div>
+                <h2>Generate Password <img src="./Assets/wave.svg" alt=""></h2>
+            </div>
+            <div class="int">
+                <label for="voter">Voter ID</label>
+                <input class="input" type="text" name="voter" placeholder="Voter ID">
+            </div>
+            
+            <div class="checkgrp">
+                <div class="check">
+                    <input type="radio" name="login_option" id="sms" value="sms">
+                    <label for="sms">Via SMS</label>
+                    <input type="radio" name="login_option" id="email" value="email">
+                    <label for="email">Via Email</label>
+                    <input type="radio" name="login_option" id="whatsapp" value="whatsapp">
+                    <label for="whatsapp">Via Whatsapp</label>
+                </div>  
+            </div>
+            <a  href="login.html" class="log-btn">Generate Password</a>
+            <p id="lastp">Already have a password? <span id="dark">Sign in</span></p>
+            <p id="lastp">How do i vote <img src="Assets/help.svg"></p>
+        </form>
+    </section>
+</body>
+</html>

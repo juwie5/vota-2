@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.log{
+    background-image: url("../Assets/login-bg.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.frm{
+    width: calc(100% - 68vw);
+    max-width: 450px; 
+    height: 57%;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 20px rgba(238, 238, 238, 0.85), -4px -4px 20px rgba(238, 238, 238, 0.85);
+    border-radius: 15px;
+    margin: auto auto;
+    padding: 30px 45px;
+}
+
+.frm-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.frm h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 31.25px;
+    line-height: 38px;
+    color: #5E5669;
+    margin: 30px  0 16px 0;
+    text-align: center;
+   
+}
+
+.frm p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(94, 86, 105, 0.6);
+   
+}
+
+.frm label{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #52525C;
+    margin-top: 10px;
+}
+
+.int{
+    display: flex;
+    flex-direction: column;   
+}
+
+.input{
+    height: 46px;
+    padding: 5px;
+    background: #FFFFFF;
+    border: 2px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 2px solid #D9D9D9;
+}
+
+.checkgrp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.check{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.check label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #5E5669;
+    opacity: 0.6;
+    margin: 5px;    
+}
+
+
+
+#tint{
+    color: rgba(14, 114, 58, 0.7);
+}
+
+.log-btn{
+    width: 100%; 
+    color: #FFFFFF;
+    background-color:#0E723A;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 139px;
+    text-decoration: none;
+    font-family: 'Inter';
+}
+
+#lastp{
+    text-align: center;
+    margin: 20px 0;
+}
+
+#lastp img{
+    vertical-align: middle;
+}
+
+#dark{
+    color: #0E723A;
+
+}
+
+.btn-sec{
+    margin: 20px 0;
+}
+
