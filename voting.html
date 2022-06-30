@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>Voting</title>
+</head>
+<body>
+    <div>
+          <!-- Navigation -->
+          <section id="navigation"> 
+            <nav class="nav">
+                <div class="nav-item1">
+                    <a href="index.html"><img src="Assets/Vota_Logo_.png" alt="votaLogo"> </a>
+                    <h3 class="nav-item1-h3">VOTA WEB</h3>
+                </div>
+                <div class="nav-item2">
+                    <a href="">Kayode M. | KJLTU-1</a>
+                    <a href="index.html"class="tooltip">
+                       <img src="Assets/logout.svg">
+                       <span class="tooltip-text">Logout</span>
+                    </a>
+                </div>
+            </nav>
+        </section>
+        <!-- BodyContent  -->
+        <section class="v-hero contain">
+            <div>
+                <div class="v-hero-head">
+                    <img src="Assets/tesla.svg">
+                    <h1 class="v-hero-h1">Tesla Union Election</h1>
+                </div>
+                <div class="v-hero-sub">
+                    <h4>Countdown to Election Closing</h4>
+                    <h2 class="day"></h2>
+                    <h2 class="hour"></h2>
+                    <h2 class="minute"></h2>
+                    <h2 class="seconds"></h2>
+                    <p>Important information: You can only vote once in this election</p>
+                </div>
+            </div>
+        </section>
+        <section class="contain">
+            <div>
+                <h3 class="voter-h3">President</h3>
+                <hr class="hr"/>
+                <div class="v-grid">
+                    <div class="v-flex">
+                        <div class="voter">
+                            <img src="Assets/elect.png" alt="">
+                            <h3>Jenny Wilson</h3>
+                            <p onclick="openModal()">View Profile</p>
+                        </div>
+                        <div>
+                            <a id="v-btn" class="v-btn" onclick="voted()">Vote</a>
+                        </div>  
+                    </div>
+                    <div class="v-flex">
+                        <div class="voter">
+                            <img src="Assets/elect1.png" alt="">
+                            <h3>Alfredo Dorwart</h3>
+                            <p>View Profile</p>
+                        </div>
+                        <div>
+                            <a class="v-btn">Vote</a>
+                        </div> 
+                    </div>
+                    <div class="v-flex">
+                        <div class="voter">
+                            <img src="Assets/elect2.png" alt="">
+                            <h3>Randy Lipshutz</h3>
+                            <p>View Profile</p>
+                        </div>
+                        <div>
+                            <a class="v-btn">Vote</a>
+                        </div> 
+                    </div>
+                    <div class="v-flex">
+                        <div class="voter">
+                            <img src="Assets/elect3.png" alt="">
+                            <h3>Jakob Rosser</h3>
+                            <p>View Profile</p>
+                        </div>
+                        <div>
+                            <a class="v-btn">Vote</a>
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+            <div class="v-sub2">
+                <h3 class="voter-h3">Secretary</h3>
+                <hr class="hr"/>
+                <div class="v-grid">
+                    <div class="v-flex">
+                        <div class="voter">
+                            <img src="Assets/elect4.png" alt="">
+                            <h3>Esther Howard</h3>
+                            <p>View Profile</p>
+                        </div>
+                        <div>
+                            <a id="v-btn" class="v-btn" onclick="voted()">Vote</a>
+                        </div>  
+                    </div>
+                    <div class="v-flex">
+                        <div class="voter">
+                            <img src="Assets/elect5.png" alt="">
+                            <h3>Jane Cooper</h3>
+                            <p>View Profile</p>
+                        </div>
+                        <div>
+                            <a class="v-btn">Vote</a>
+                        </div> 
+                    </div>
+                    <div class="v-flex">
+                        <div class="voter">
+                            <img src="Assets/elect6.png" alt="">
+                            <h3>Annette Black</h3>
+                            <p>View Profile</p>
+                        </div>
+                        <div>
+                            <a class="v-btn">Vote</a>
+                        </div> 
+                    </div>
+                    <div class="v-flex">
+                        <div class="voter">
+                            <img src="Assets/elect7.png" alt="">
+                            <h3>Dianne Russell</h3>
+                            <p>View Profile</p>
+                        </div>
+                        <div>
+                            <a class="v-btn">Vote</a>
+                        </div> 
+                    </div> 
+                   
+                </div>
+            </div>
+        </section>
+        <section id="profile" class="profile-modal">
+            <div class="profile" id="probody">
+                <div class="pro-head">
+                    <h2>CANDIDATE INFORMATION</h2>
+                    <img src="Assets/x.svg" onclick="closeModal()">
+                </div>
+               <div class="pro-head">
+                    <img src="Assets/modal.png">
+                    <div class="pro-sub">
+                        <div class="sub">
+                            <div><h4>FULLNAME: </h4></div>
+                             <div><p class="sub-span">Jenny Wilson</p></div>
+                        </div>
+                        <div class="sub">
+                            <div><h4>VOTER ID: </h4></div>
+                             <div><p class="sub-span">KJLTU-1</p></div>
+                        </div>
+                        <div class="sub">
+                            <div><h4>POSITION: </h4></div>
+                             <div><p class="sub-span">President</p></div>
+                        </div>
+                        <div class="sub">
+                            <div><h4>ABOUT: </h4></div>
+                             <div><p class="sub-span">Lorem ipsum dolor sit amet, consectetur</br>
+                                 zadipiscing elit. Id neque pulvinar ut ligula <br>
+                                 venenatis nisl turpis eleifend velit. Phasellus <br>
+                                 auctor egestas pretium sollicitudin non, adipiscing.</p></div>
+                        </div>
+                        <div class="sub">
+                            <div><h4>MANIFESTO: </h4></div>
+                             <div><p class="sub-span" id="under">PresidentManifesto.PDF <span id="green-line" onclick="showManifest()">View</span> <span id="lime-line">Download</span></p></div>
+                        </div>  
+                    </div>
+               </div>
+               <button class="pro-btn" onclick="closeModal()">Close</button>
+            </div>
+            <div id="manifest" class="manifest">
+                <div>
+                    <p class="mani-close" onclick="closeModal()">Close <img class="mani-img" src="Assets/greenx.svg"></p>
+                    <img src="Assets/manifesto.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="contain">
+            <div id="sub" class="vote-confirm">
+                <p class="con-p">Enter this token: <span class="con-span">3B6QEX</span></p>
+                <input class="con-input" type="text" placeholder="3B6QEX">
+                <p class="con-p">(as shown in CAPS) to confirm your vote</p>
+            </div>
+            <div class="btn" id="cfm-btn">
+                <button class="btn-vote" id="green-btn" onclick="submit()">Confirm</button>
+                <a id="green-a" class="btn-vote sub-a" onclick="vote()">Submit Vote</a>  
+            </div> 
+        </section>
+        <section id="lastModal" class="last-modal">
+            <div  class="last-profile">
+                <div class="pro-head">
+                    <h2 class="last-h2">Confirmation</h2>
+                    <img src="Assets/x.svg" onclick="closeLastModal()">
+                </div>
+                <div class="pro-head last-head">
+                    <h4 class="last-h2"> Are you sure you want to confirm your votes?</h4>
+                    <p class="last-p">Please note you cannot not alter your vote after now</p>
+                </div>
+                <div class="last-grp-btn">
+                    <button onclick="closeLastModal()" id="cancel" class="last-btn">Cancel</button>
+                    <button id="confirm" class="last-btn">Confirm</button>
+                </div>    
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <div class="foot">
+               <div class="ft-log">
+                   <img src="Assets/Vota_Logo_.png" alt="">
+                   <h2>VOTA</h2>
+               </div>
+               <div class="ft-links"> 
+                   <h4>Quick Links</h4>
+                   <p><a href="#about">Features</a></p>
+                   <p><a href="#faq">FAQs</a></p>
+                   <p><a href="login.html">Log in</a></p>
+               </div>
+               <div class="ft-links">
+                  <h4>Company</h4>
+                  <p><a href="index.html">Home</a></p>
+                  <p><a href="policy.html">Privacy Policy</a></p>
+                  <p><a href="terms.html">Terms</a></p>
+              </div>
+              <div class="ft-links">
+                  <div class="ft-img">
+                      <img src="Assets/Facebook.svg" alt="Facebook">
+                      <img src="Assets/Twiter.svg" alt="">
+                      <img src="Assets/Instagram.svg" alt="">
+                  </div>
+                  <p>Plot 8, Louis Solomon Street,<br/> 
+                      Off Ahmadu Bello Way,<br/>
+                      Victoria Island, Lagos.</p>
+                      <p>info@chams.com</p>
+                      <p>+234-01-4536526</p>
+              </div>
+           </div>
+           <div class="ft-end">
+               <p>VOTA is a secured and reliable web based platform for organisation, society, club, or group looking to give <br/> their members a voice. VOTA has everything you need to get your elections up and running in no time!</p>
+               <hr>
+               <p id="lastp">Copyright Vota © 2022, All Rights Reserved</p> 
+           </div>
+        </footer> 
+    </div>
+    <script src="src/home.js"></script>
+    <script src="src/time.js"></script>
+</body>
+</html>

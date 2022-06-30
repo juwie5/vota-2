@@ -15,7 +15,7 @@
 .frm{
     width: calc(100% - 68vw);
     max-width: 450px; 
-    height: 57%;
+    height: 75%;
     background-color: #FFFFFF;
     box-shadow: 4px 4px 20px rgba(238, 238, 238, 0.85), -4px -4px 20px rgba(238, 238, 238, 0.85);
     border-radius: 15px;
@@ -116,9 +116,13 @@
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
-    padding: 10px 139px;
+    padding: 10px 30%;
     text-decoration: none;
     font-family: 'Inter';
+}
+
+#login{
+    padding: 10px 45%;
 }
 
 #lastp{
