@@ -49,11 +49,12 @@ function voted(){
 
 function vote(){
     document.getElementById("lastModal").style.display = "flex";
-    location.replace("lastpage.html")
-    // let element = document.querySelectorAll("clickVote");
-    console.log("hi")
+}
 
-   
+function finalVote(){ 
+    document.getElementById("nots").style.display = "flex"; 
+    document.getElementById("lastModal").style.display = "none"; 
+    setTimeout(location.replace("lastpage.html"), 9000);
 }
 
 
